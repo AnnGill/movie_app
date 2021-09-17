@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.alignment {
+    margin: 0 25%;
+}
+
+body {
+    background-color: #22254b;
+}
+
+.header {
+    background-color: #22254b;
+    height: 54px;
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 25%;
+}
+
+.logo {
+    border-radius: 50px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.search {
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.title {
+    background-color: #000;
+    height: 54px;
+    width: 100%;
+}
+
+.title__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.title__nav a {
+    color: #DBDBDB;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title__nav a:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+.context {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.context__movie {
+    width: 200px;
+    background-color: #424885;
+    border-radius: 4px;
+    margin-top: 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+
+.context__movie img {
+    height: 350px;
+    max-width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform ease-in 0.25s;
+}
+
+.context__movie img:hover {
+    transform: scale(1.5);
+    image-rendering: pixelated;
+}
+
+.movie__info {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.movie__info--name {
+    max-width: 140px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.movie__info--name:hover {
+    color: yellow;
+}
+
+.movie__info--score {
+    background-color: #22254b;
+    padding: 4px 8px;
+    border-radius: 4px;
+    max-height: 26px; 
+}
+
+.greenScore{
+    color: rgb(53, 224, 53);
+}
+
+.yellowScore{
+    color: yellow;
+}
+
+.redScore{
+    color: red;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer img {
+    width: 100%;
+}
